@@ -1,0 +1,87 @@
+.content {
+    margin: 50px;
+    position: relative;
+    float : left;
+}
+.vis-chart-tips {
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+}
+
+.vis-chart-tips span {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.vis-chart-tips span.bot {
+    border-width: 10px;
+    border-style: solid dashed dashed;
+    border-color: rgba(145, 145, 145, 0.3) transparent transparent transparent;
+    left: 40px;
+    bottom: -20px;
+}
+
+.vis-chart-tips span.top {
+    border-width: 10px;
+    border-style: solid dashed dashed;
+    border-color: #ffffff transparent transparent transparent;
+    left: 40px;
+    bottom: -18px;
+}
+
+.vis-chart-tips.left span.bot {
+    border-width: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent rgba(145, 145, 145, 0.3) transparent transparent;
+    left: -20px;
+    top: 20px;
+}
+
+.vis-chart-tips.left span.top {
+    border-width: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #ffffff transparent transparent;
+    left: -18px;
+    top: 20px;
+}
+
+.vis-chart-tips.right span.bot {
+    border-width: 10px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent rgba(145, 145, 145, 0.3);
+    left: 240px;
+    top: 20px;
+}
+
+.vis-chart-tips.right span.top {
+    border-width: 10px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #ffffff;
+    left: 238px;
+    top: 20px;
+}
+
+.vis-chart-tips.top span.bot {
+    border-width: 10px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent rgba(145, 145, 145, 0.3) transparent;
+    left: 40px;
+    top: -20px;
+}
+
+.vis-chart-tips.top span.top {
+    border-width: 10px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #ffffff transparent;
+    left: 40px;
+    top: -18px;
+}
