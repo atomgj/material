@@ -1,4 +1,4 @@
-var SortAlgorithm = require('./sortable'),
+var SortAlgorithm = require('./sortAlgorithm'),
     i, array = [],
     sortAlgorithm;
 
