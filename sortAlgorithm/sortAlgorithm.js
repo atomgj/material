@@ -3,6 +3,9 @@ function SortAlgorithm(array) {
     this.size = array.length;
 }
 
+/**
+* 交换数组元素位置
+*/
 SortAlgorithm.prototype.swap = function(array, a, b) {
     if(a < 0 || b < 0 || array.length <= a || array.length <= b) {
         throw new Error('IndexError ' + a + " - " + b);
@@ -11,7 +14,9 @@ SortAlgorithm.prototype.swap = function(array, a, b) {
     array[a] = array[b];
     array[b] = temp;
 };
-
+/**
+* 冒泡排序
+*/
 SortAlgorithm.prototype.bubble = function bubbleSort() {
     for(var i = this.size - 1; 0 < i; i--) {
         for(var k = 0; k < i; k++) {
@@ -21,7 +26,9 @@ SortAlgorithm.prototype.bubble = function bubbleSort() {
         }
     }
 };
-
+/**
+* 选择排序
+*/
 SortAlgorithm.prototype.selection = function selectionSort() {
     for(var i = 0; i < this.size - 1; i++) {
         var min = i;
@@ -34,6 +41,9 @@ SortAlgorithm.prototype.selection = function selectionSort() {
     }
 };
 
+/**
+* 插入排序
+*/
 SortAlgorithm.prototype.insertion = function insertionSort() {
     for(var i = 1; i < this.size; i++) {
         for(var k = i; 0 < k; k--) {
